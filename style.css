@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(images/dark_bg.png);
+    background-color: #313131;
     font-family: 'Krub', sans-serif;
     font-size: 20px;
 }
@@ -13,9 +13,8 @@ header {
     position: fixed;
     right: 0px;
     left: 0px;
-    background-image: -webkit-linear-gradient(180deg, #369078, #d36e6c);
-    background-image: -moz-linear-gradient(180deg, #369078, #d36e6c);
-    background-image: -o-linear-gradient(180deg, #369078, #d36e6c);
+    top: 0;
+    background-image: linear-gradient(180deg, #369078, #d36e6c);
 }
 
 .container_ul {
@@ -34,4 +33,59 @@ nav ul li a {
     text-decoration: none;
     color: #160404;
     font-weight: 700;
+}
+
+
+main {
+    margin: 80px 0;
+}
+section {
+    padding: 20px;
+    margin: 30px;
+}
+
+#main_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_section img {
+    box-shadow: 20px 10px #d36e6c, -20px  -10px #369078;
+    border-radius: 50% 40% 50% 40%;
+    animation: border_color_radius 8s infinite;
+}
+
+@keyframes border_color_radius {
+    0% {
+        border-radius: 50% 40% 50% 40%;
+        box-shadow: 20px 10px #d36e6c, -20px  -10px #369078;
+    }
+    25% {
+        border-radius: 25% 40% 25% 40%;
+        box-shadow: 30px 10px #d36e6c, -30px  -10px #369078;
+    }
+    50% {
+        border-radius: 40% 25% 40% 25%;
+        box-shadow: 40px 10px #d36e6c, -40px  -10px #369078;
+    }
+    75% {
+        border-radius: 40% 50% 40% 50%;
+        box-shadow: 30px 10px #d36e6c, -30px  -10px #369078;
+    }
+}
+
+h1 {
+    font-family: 'Arizonia', cursive;
+    font-size: 100px;
+    color: #d36e6c;
+}  
+
+.intro {
+    color: #D5D6D8;
+}
+
+h2 {
+    font-family: 'Arizonia', cursive;
+    font-size: 50px;
 }
