@@ -1,4 +1,37 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/dark_bg.png);
+    font-family: 'Krub', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    background-image: -webkit-linear-gradient(180deg, #369078, #d36e6c);
+    background-image: -moz-linear-gradient(180deg, #369078, #d36e6c);
+    background-image: -o-linear-gradient(180deg, #369078, #d36e6c);
+}
+
+.container_ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 15px;
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #160404;
+    font-weight: 700;
 }
