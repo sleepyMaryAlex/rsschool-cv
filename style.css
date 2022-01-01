@@ -196,7 +196,8 @@ h2 {
     font-size: 50px;
 }
 
-#about_myself p {
+#about_myself p,
+#english p {
     margin: 15px;
     padding: 10px;
     line-height: 30px;
@@ -218,10 +219,12 @@ h2 {
     height: 50px;
 }
 
-#contacts ul li strong {
+#contacts ul li strong,
+#english p strong {
     margin-right: 10px;
     color: #369078;
     text-shadow: 1px 1px 1px #313131;
+    letter-spacing: 2px;
 }
 
 #contacts ul li a {
@@ -304,6 +307,19 @@ pre {
     margin: 15px 15px 0 15px;
     padding: 10px;
     color: #D5D6D8;
+}
+
+#education ul li img {
+    margin-bottom: -65px;
+    padding-right: 8px;
+}
+
+#education ul li span {
+    color: #369078;
+}
+
+#education ul li:nth-child(2) {
+    margin-left: 48px;
 }
 
 footer {
