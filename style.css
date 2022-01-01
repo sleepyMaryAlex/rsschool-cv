@@ -62,7 +62,7 @@ section {
     align-items: center;
     background-image: none;
     position: relative;
-    z-index: -1;
+    z-index: -2;
 }
 
 .my_photo {
@@ -222,6 +222,38 @@ h2 {
 
 #contacts ul li a:hover {
     color: #369078;
+}
+
+#contacts {
+    height: 630px;
+}
+
+.gh_img {
+    margin: -40% 30% 30% 70%;
+    animation: gh_animation 5s infinite;
+}
+
+@keyframes gh_animation {
+    0% {
+        width: 150px;
+    }
+    25% {
+        width: 180px;
+    }
+}
+
+.telegram_img {
+    margin: -30% 45% 20% 55%;
+    animation: telegram_animation 5s infinite;
+}
+
+@keyframes telegram_animation {
+    10% {
+        width: 120px;
+    }
+    75% {
+        width: 140px;
+    }
 }
 
 .skills {
