@@ -208,3 +208,25 @@ h2 {
     margin-bottom: -15px;
     margin-right: 15px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+footer p,
+footer a {
+    margin: 15px;
+    padding: 10px;
+}
+
+footer a {
+    margin-top: -15px;
+}
+
+footer p {
+    color:#D5D6D8;
+    flex-grow: 1;
+}
