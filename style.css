@@ -37,6 +37,7 @@ header {
     position: absolute;
     margin: 5px;
     padding: 10px;
+    width: 50px;
 }
 
 .image:hover {
@@ -285,37 +286,43 @@ h2 {
     }
 }
 
-.skills {
+.skills ul,
+.hobbies ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-figure {
-    margin: 15px;
+.skills ul li,
+.hobbies ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-weight: 500;
+}
+
+.hobbies ul li {
+    margin: 15px 60px;
     padding: 10px;
+    width: 100px;
+    list-style: none;
+    line-height: 30px;
 }
 
-figure img {
+.skills ul li img,
+.hobbies ul li img {
     padding: 7px;
+    margin-bottom: 15px;
     width: 80px;
     border: 4px solid #D5D6D8;
     border-radius: 50%;
 }
 
-figure img:hover {
+.skills ul li img:hover,
+.hobbies ul li img:hover {
     border: 4px solid #d36e6c;
-}
-
-figcaption {
-    padding: 10px 0px;
-    margin-left: -2px;
-    text-align: center;
-    font-weight: 500;
-}
-
-.figcaption {
-    margin-left: -5px;
 }
 
 pre {
@@ -340,18 +347,6 @@ pre {
 
 #education ul li:nth-child(2) {
     margin-left: 48px;
-}
-
-.hobbies {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.hobbies figure img {
-    margin: 0 45px;
-    width: 90px;
 }
 
 footer {
