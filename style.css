@@ -14,6 +14,10 @@ body {
     color: #160404;
 }
 
+.snow_theme {
+    background: url(images/snow.gif);
+}
+
 header {
     position: fixed;
     right: 0px;
@@ -23,14 +27,24 @@ header {
     z-index: 10;
 }
 
-.container_ul {
+.container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+.image {
+    position: absolute;
+    margin: 5px;
+    padding: 10px;
+}
+
+.image:hover {
+    cursor: pointer;
 }
 
 nav ul li {
-    margin: 15px;
+    margin: 15px 25px;
     padding: 10px;
     list-style: none;
 }
@@ -39,6 +53,7 @@ nav ul li a {
     text-decoration: none;
     color: #160404;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 nav ul li a:hover {
@@ -63,7 +78,7 @@ section {
     align-items: center;
     background-image: none;
     position: relative;
-    z-index: -2;
+    z-index: 5;
 }
 
 .my_photo {
@@ -224,7 +239,7 @@ h2 {
     margin-right: 10px;
     color: #369078;
     text-shadow: 1px 1px 1px #313131;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 #contacts ul li a {
@@ -300,7 +315,7 @@ figcaption {
 }
 
 .figcaption {
-    margin-left: -15px;
+    margin-left: -5px;
 }
 
 pre {
@@ -311,7 +326,7 @@ pre {
 #code p {
     margin: 15px 15px 0 15px;
     padding: 10px;
-    color: #D5D6D8;
+    color: #d3b2b2;
 }
 
 #education ul li img {
