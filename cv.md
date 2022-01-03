@@ -2,7 +2,7 @@
 
 ### *I'm beginner front-end web-developer*  
   
-![My photo](my_photo.jpg)
+![My photo](images/my_photo.jpg)
 
 ***
 
