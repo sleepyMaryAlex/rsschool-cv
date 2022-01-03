@@ -10,9 +10,9 @@ html {
 body {
     min-width: 630px;
     background-color: #313131;
+    color: #160404;
     font-family: 'Krub', sans-serif;
     font-size: 20px;
-    color: #160404;
 }
 
 .snow_theme {
@@ -24,8 +24,8 @@ header {
     right: 0px;
     left: 0px;
     top: 0;
-    background-image: linear-gradient(180deg, #369078, #d36e6c);
     z-index: 10;
+    background-image: linear-gradient(180deg, #369078, #d36e6c);
 }
 
 .container {
@@ -37,9 +37,9 @@ header {
 
 .image {
     position: absolute;
+    width: 50px;
     margin: 4px;
     padding: 10px;
-    width: 50px;
 }
 
 .image:hover {
@@ -58,10 +58,10 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #160404;
     font-weight: 700;
     letter-spacing: 1px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -82,60 +82,62 @@ section {
 }
 
 #main_section {
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: none;
-    position: relative;
-    z-index: 5;
 }
 
 .my_photo {
-    box-shadow: 20px 10px #d36e6c, -20px  -10px #369078;
-    border-radius: 50% 40% 50% 40%;
+    width: 400px;
+    border-radius: 50% 40%;
     animation: border_color_radius 8s infinite;
+    box-shadow: 20px 10px #d36e6c, -20px  -10px #369078;
 }
 
 @keyframes border_color_radius {
     0% {
-        border-radius: 50% 40% 50% 40%;
+        border-radius: 50% 40%;
         box-shadow: 20px 10px #d36e6c, -20px  -10px #369078;
     }
     25% {
-        border-radius: 25% 40% 25% 40%;
+        border-radius: 25% 40%;
         box-shadow: 30px 10px #d36e6c, -30px  -10px #369078;
     }
     50% {
-        border-radius: 40% 25% 40% 25%;
+        border-radius: 40% 25%;
         box-shadow: 40px 10px #d36e6c, -40px  -10px #369078;
     }
     75% {
-        border-radius: 40% 50% 40% 50%;
+        border-radius: 40% 50%;
         box-shadow: 30px 10px #d36e6c, -30px  -10px #369078;
     }
 }
 
 .hi,
-.hi2,
-.hi3,
-.hi4 {
+.my_name,
+.joy,
+.welcome {
     position: absolute;
     padding: 10px;
 }
 
 .hi,
-.hi3 {
+.joy {
     margin: 80px 86% 60px 14%;
     opacity: 0;
 }
 
-.hi2,
-.hi4 {
+.my_name,
+.welcome {
     margin: 80px 14% 60px 86%;
     opacity: 0;
 }
 
 .hi {
+    width: 190px;
     animation: hi_animation 14s infinite;
 }
 
@@ -148,11 +150,12 @@ section {
     }
 }
 
-.hi2 {
-    animation: hi2_animation 14s infinite;
+.my_name {
+    width: 210px;
+    animation: name_animation 14s infinite;
 }
 
-@keyframes hi2_animation {
+@keyframes name_animation {
     0% {
         opacity: 0; 
     }
@@ -167,11 +170,12 @@ section {
     }
 }
 
-.hi3 {
-    animation: hi3_animation 14s infinite;
+.joy {
+    width: 250px;
+    animation: joy_animation 14s infinite;
 }
 
-@keyframes hi3_animation {
+@keyframes joy_animation {
     0% {
         opacity: 0; 
     }
@@ -186,11 +190,12 @@ section {
     }
 }
 
-.hi4 {
-    animation: hi4_animation 14s infinite;
+.welcome {
+    width: 270px;
+    animation: welcome_animation 14s infinite;
 }
 
-@keyframes hi4_animation {
+@keyframes welcome_animation {
     0% {
         opacity: 0; 
     }
@@ -203,9 +208,10 @@ section {
 }
 
 h1 {
-    font-family: 'Arizonia', cursive;
-    font-size: 100px;
     color: #d36e6c;
+    font-family: 'Arizonia', cursive;
+    font-size: 500%;
+    text-align: center;
 }  
 
 .intro {
@@ -216,7 +222,7 @@ h2 {
     padding: 10px;
     margin: 0 15px;
     font-family: 'Arizonia', cursive;
-    font-size: 50px;
+    font-size: 250%;
 }
 
 #about_myself p,
@@ -226,23 +232,23 @@ h2 {
     line-height: 30px;
 }
 
-#contacts ul li,
-#skills ul li,
-#education ul li {
+.contacts ul li,
+.skills ul li,
+.education ul li {
     margin: 15px;
     padding: 10px;
     list-style: none;
     line-height: 30px;
 }
 
-#contacts ul li img {
-    margin-bottom: -15px;
-    margin-right: 15px;
+.contacts ul li img {
     width: 50px;
     height: 50px;
+    margin-bottom: -15px;
+    margin-right: 15px;
 }
 
-#contacts ul li strong,
+.contacts ul li strong,
 #english p strong {
     margin-right: 10px;
     color: #369078;
@@ -250,12 +256,12 @@ h2 {
     letter-spacing: 1px;
 }
 
-#contacts ul li a {
-    text-decoration: none;
+.contacts ul li a {
     color: #160404;
+    text-decoration: none;
 }
 
-#contacts ul li a:hover {
+.contacts ul li a:hover {
     color: #369078;
 }
 
@@ -267,9 +273,9 @@ h2 {
 }
 
 .links {
-    width: 30%;
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
 
 .links a:first-child {
@@ -277,6 +283,7 @@ h2 {
 }
 
 .gh_img {
+    width: 150px;
     animation: gh_animation 5s infinite;
 }
 
@@ -290,6 +297,7 @@ h2 {
 }
 
 .telegram_img {
+    width: 120px;
     animation: telegram_animation 5s infinite;
 }
 
@@ -322,18 +330,18 @@ h2 {
 }
 
 .hobbies ul li {
+    width: 100px;
     margin: 15px 60px;
     padding: 10px;
-    width: 100px;
     list-style: none;
     line-height: 30px;
 }
 
 .skills ul li img,
 .hobbies ul li img {
+    width: 80px;
     padding: 7px;
     margin-bottom: 15px;
-    width: 80px;
     border: 4px solid #D5D6D8;
     border-radius: 50%;
 }
@@ -364,18 +372,18 @@ pre {
 }
 
 .projects img {
+    width: 320px;
     padding: 10px;
     margin: 15px;
-    width: 320px;
 }
 
-#education img {
+.education img {
     height: 82px;
     padding-left: 15px;
     margin-top: 30px;
 }
 
-#education ul li span {
+.education ul li span {
     color: #369078;
 }
 
@@ -398,11 +406,12 @@ footer a {
     padding: 10px;
 }
 
-footer a {
-    margin-top: -15px;
+footer a img {
+    height: 60px;
+    margin-top: -20px;
 }
 
 footer p {
-    color:#D5D6D8;
     flex-grow: 1;
+    color:#D5D6D8;
 }
