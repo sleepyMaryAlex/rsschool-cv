@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Maria Huchkova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/my_favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="theme">
+        <header>
+            <img class="image" src="images/snowflake.png" alt="snowflake">
+            <nav>
+                <ul class="container">
+                    <li><a href="#about_myself">About myself</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code example</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="main_section">
+                <img class="hi" src="images/hi.png" alt="hi">
+                <img class="my_name" src="images/my_name.png" alt="my name">
+                <img class="joy" src="images/joy.png" alt="joy">
+                <img class="welcome" src="images/welcome.png" alt="welcome">
+                <img class="my_photo" src="images/my_big_photo.jpg" alt="my photo">
+                <h1>Maria Huchkova</h1>
+                <h2 class="intro"><em>I'm beginner front-end</em></h2>
+            </section>
+
+            <section id="about_myself">
+                <h2>About myself</h2>
+                <p>I chose to be a programmer because I would like to constantly develop, comprehend new technologies.
+                    It is important for me to cooperate and exchange experience with other countries, to be in a friendly and
+                    intelligent team. I believe that all of the above applies to the profession of a programmer.</p>
+                <p>In turn, I am hardworking and responsible. I try to complete my task as efficiently as possible and
+                    treat my colleagues in a friendly and respectful manner, observing subordination.</p>
+                <p>My goal is to become a professional in my field.</p>
+            </section>
+
+            <section id="contacts">
+                <h2>Contacts</h2>
+                <div class="contacts">
+                    <ul>
+                        <li><img src="images/logo_location.png" alt="logo location"><strong>Location: </strong>Belarus Minsk</li>
+                        <li><img src="images/logo_email.png" alt="logo email"><strong>Email: </strong>mariaguchkova1@gmail.com</li>
+                        <li><img src="images/logo_phone.png" alt="logo phone"><strong>Phone: </strong>+375 33 337-75-04</li>
+                        <li><img src="images/logo_github.png" alt="logo github"><strong>GitHub: </strong><a href="https://github.com/sleepyMaryAlex">sleepyMaryAlex</a></li>
+                        <li><img src="images/logo_discord.png" alt="logo discord"><strong>Discord: </strong>Mary Guchkova (@sleepyMaryAlex)</li>
+                        <li><img src="images/logo_telegram.png" alt="logo telegram"><strong>Telegram: </strong><a href="https://teleg.one/mariaguchkova">@mariaguchkova</a></li>
+                    </ul>
+                    <div class="links">
+                        <a href="https://github.com/sleepyMaryAlex"><img class="gh_img" src="images/circle_gh.png" alt="github"></a>
+                        <a href="https://teleg.one/mariaguchkova"><img class="telegram_img" src="images/circle_telegram.png" alt="telegram"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <ul>
+                        <li><img src="images/logo_html.png" alt="html">HTML</li>
+                        <li><img src="images/logo_css.png" alt="css">CSS</li>
+                        <li><img src="images/logo_js.png" alt="js">JavaScript</li>
+                        <li><img src="images/logo_git.png" alt="git">Git</li>
+                        <li><img src="images/logo_gh.png" alt="github">GitHub</li>
+                        <li><img src="images/logo_md.png" alt="md">Markdown</li>
+                        <li><img src="images/logo_vscode.png" alt="vscode">VS Code</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="code">
+                <h2>Code example</h2>
+                <p><em>Given an array of integers, find the one that appears an odd number of times. There will always be only one integer that appears an odd number of times.</em></p>
+                <pre>
+                    <code>
+function findOdd(numbers) {
+    const counters = new Map();
+    for (const number of numbers) {
+    if (counters.has(number)) {
+        let counter = counters.get(number);
+        counter++;
+        counters.set(number, counter);
+    } else {
+         counters.set(number, 1);
+    }
+    }
+    for (const number of counters.keys()) {
+    let counter = counters.get(number);
+    if (counter % 2 === 1) {
+         return number;
+     }
+     }
+}
+                    </code>
+                </pre>
+            </section>
+
+            <section id="projects">
+                <h2>My projects</h2>
+                <div class="projects">
+                    <a href="https://sleepymaryalex.github.io/wooden-boat/"><img src="images/wooden_boat.jpg" alt="wooden boat"></a>
+                    <a href="https://sleepymaryalex.github.io/CV/"><img src="images/cv.jpg" alt="cv"></a>
+                    <a href="https://sleepymaryalex.github.io/resume/"><img src="images/resume.jpg" alt="resume"></a>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education">
+                    <img src="images/line.png" alt="line">
+                    <ul>
+                        <li>Belarusian State Academy of Music <span>(2014 - 2019)</span></li>
+                        <li>RS Schools Course "JavaScript/Front-end. Stage 0" <span>(in progress)</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="english">
+                <h2>English</h2>
+                <p><strong>B1.</strong>I'm studying English with a tutor and communicating with a native speaker. I'm also reading English grammar books.</p>
+            </section>
+
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <div class="hobbies">
+                    <ul>
+                        <li><img src="images/programming.png" alt="programming">Programming</li>
+                        <li><img src="images/science.png" alt="science">Science</li>
+                        <li><img src="images/running.png" alt="running">Running</li>
+                        <li><img src="images/cycling.png" alt="cycling">Cycling</li>
+                        <li><img src="images/books.png" alt="books">Books</li>
+                        <li><img src="images/movie.png" alt="movie">Movies</li>
+                        <li><img src="images/music.png" alt="music">Music</li>
+                        <li><img src="images/travel.png" alt="travel">Travels</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&#169; 2022 by Maria Huchkova</p>
+            <a href="https://github.com/sleepyMaryAlex"><img src="images/logo_github.png" alt="logo"></a>
+            <a href="https://rs.school/js/"><img src="images/logo_rs.jpg" alt="logo"></a>
+        </footer>
+    </div>
+
+    <script>
+        let image = document.querySelector(".image");
+        image.addEventListener("click", changeTheme, false);
+        function changeTheme(e) {
+            let theme = document.querySelector("#theme");
+            theme.classList.toggle("snow_theme");
+            let imageSrc = "images/snowflake.png";
+            let imageSrc2 = "images/sun.png";
+            if (image.getAttribute("src") === imageSrc) {
+                image.setAttribute("src", imageSrc2);
+            } else if (image.getAttribute("src") === imageSrc2) {
+                image.setAttribute("src", imageSrc);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 630px;
+    background-color: #313131;
+    color: #160404;
+    font-family: 'Krub', sans-serif;
+    font-size: 20px;
+}
+
+.snow_theme {
+    background: url(images/snow.gif);
+}
+
+header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0;
+    z-index: 10;
+    background-image: linear-gradient(180deg, #369078, #d36e6c);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image {
+    position: absolute;
+    width: 50px;
+    margin: 4px;
+    padding: 10px;
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+nav ul li {
+    margin: 15px 0;
+    padding: 10px;
+    list-style: none;
+    white-space: nowrap;
+}
+
+nav ul li:first-child {
+    margin-left: 80px;
+}
+
+nav ul li a {
+    color: #160404;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color:#d36e6c;
+    text-shadow: 1px 1px 1px #313131;
+}
+
+main {
+    margin: 80px 0;
+    overflow: hidden;
+}
+
+section {
+    padding: 20px;
+    margin: 30px;
+    background-image: linear-gradient(180deg, #639084, #d3b2b2);
+    border-radius: 5%;
+}
+
+#main_section {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+}
+
+.my_photo {
+    width: 400px;
+    border-radius: 50% 40%;
+    animation: border_color_radius 8s infinite;
+    box-shadow: 20px 10px #d36e6c, -20px  -10px #369078;
+}
+
+@keyframes border_color_radius {
+    0% {
+        border-radius: 50% 40%;
+        box-shadow: 20px 10px #d36e6c, -20px  -10px #369078;
+    }
+    25% {
+        border-radius: 25% 40%;
+        box-shadow: 30px 10px #d36e6c, -30px  -10px #369078;
+    }
+    50% {
+        border-radius: 40% 25%;
+        box-shadow: 40px 10px #d36e6c, -40px  -10px #369078;
+    }
+    75% {
+        border-radius: 40% 50%;
+        box-shadow: 30px 10px #d36e6c, -30px  -10px #369078;
+    }
+}
+
+.hi,
+.my_name,
+.joy,
+.welcome {
+    position: absolute;
+    padding: 10px;
+}
+
+.hi,
+.joy {
+    margin: 80px 86% 60px 14%;
+    opacity: 0;
+}
+
+.my_name,
+.welcome {
+    margin: 80px 14% 60px 86%;
+    opacity: 0;
+}
+
+.hi {
+    width: 190px;
+    animation: hi_animation 14s infinite;
+}
+
+@keyframes hi_animation {
+    20% {
+       opacity: 1; 
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+.my_name {
+    width: 210px;
+    animation: name_animation 14s infinite;
+}
+
+@keyframes name_animation {
+    0% {
+        opacity: 0; 
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+         opacity: 1;
+    }
+    60% {
+         opacity: 0;
+    }
+}
+
+.joy {
+    width: 250px;
+    animation: joy_animation 14s infinite;
+}
+
+@keyframes joy_animation {
+    0% {
+        opacity: 0; 
+    }
+    40% {
+         opacity: 0;
+    }
+    60% {
+         opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+.welcome {
+    width: 270px;
+    animation: welcome_animation 14s infinite;
+}
+
+@keyframes welcome_animation {
+    0% {
+        opacity: 0; 
+    }
+    60% {
+         opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #d36e6c;
+    font-family: 'Arizonia', cursive;
+    font-size: 500%;
+    text-align: center;
+}  
+
+.intro {
+    color: #D5D6D8;
+}
+
+h2 {
+    padding: 10px;
+    margin: 0 15px;
+    font-family: 'Arizonia', cursive;
+    font-size: 250%;
+}
+
+#about_myself p,
+#english p {
+    margin: 15px;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.contacts ul li,
+.skills ul li,
+.education ul li {
+    margin: 15px;
+    padding: 10px;
+    list-style: none;
+    line-height: 30px;
+}
+
+.contacts ul li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: -15px;
+    margin-right: 15px;
+}
+
+.contacts ul li strong,
+#english p strong {
+    margin-right: 10px;
+    color: #369078;
+    text-shadow: 1px 1px 1px #313131;
+    letter-spacing: 1px;
+}
+
+.contacts ul li a {
+    color: #160404;
+    text-decoration: none;
+}
+
+.contacts ul li a:hover {
+    color: #369078;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.links a:first-child {
+    align-self: center;
+}
+
+.gh_img {
+    width: 150px;
+    animation: gh_animation 5s infinite;
+}
+
+@keyframes gh_animation {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+    }
+}
+
+.telegram_img {
+    width: 120px;
+    animation: telegram_animation 5s infinite;
+}
+
+@keyframes telegram_animation {
+    10% {
+        width: 120px;
+        opacity: 0;
+    }
+    65% {
+        width: 140px;
+        opacity: 1;
+    }
+}
+
+.skills ul,
+.hobbies ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills ul li,
+.hobbies ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-weight: 500;
+}
+
+.hobbies ul li {
+    width: 100px;
+    margin: 15px 70px;
+    padding: 10px;
+    list-style: none;
+    line-height: 30px;
+}
+
+.skills ul li img,
+.hobbies ul li img {
+    width: 80px;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 4px solid #D5D6D8;
+    border-radius: 50%;
+}
+
+.skills ul li img:hover,
+.hobbies ul li img:hover {
+    border: 4px solid #d36e6c;
+}
+
+pre {
+    margin-left: 25px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+#code p {
+    margin: 15px 15px 0 15px;
+    padding: 10px;
+    color: #d3b2b2;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects img {
+    width: 320px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.education img {
+    height: 82px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.education ul li span {
+    color: #369078;
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+footer p,
+footer a {
+    margin: 15px;
+    padding: 10px;
+}
+
+footer a img {
+    height: 60px;
+    margin-top: -20px;
+}
+
+footer p {
+    flex-grow: 1;
+    color:#D5D6D8;
+}
